@@ -287,3 +287,33 @@ main p.big, main h2.big { letter-spacing: .05em; }
     #mobile-view { display: none; }
     #desktop-view { display: block; }
 }
+ 
+/* floating animation */
+ .floating {  
+    animation-name: floating;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    /* margin-left: 30px;
+    margin-top: 5px; */
+}
+
+@keyframes floating {
+    from { transform: translate(0,  0px); }
+    65%  { transform: translate(0, 5px); }
+    to   { transform: translate(0, -0px); }    
+}
+
+/* rotate animation */
+.rotate {
+    -webkit-animation: rotation 2s infinite linear;
+}
+
+@-webkit-keyframes rotation {
+    from {
+            -webkit-transform: rotate(0deg);
+    }
+    to {
+            -webkit-transform: rotate(359deg);
+    }
+}
